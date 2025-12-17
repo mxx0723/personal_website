@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vCard - Personal Portfolio</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/xiaoxu.png" alt="Xiaoxu Ma" width="180" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Xiaoxu Ma">Xiaoxu Ma</h1>
+
+          <p class="title">
+            Graduate Student @ Gatech<br />
+            AI Researcher
+          </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:xma394@gatech.edu" class="contact-link">xma394@gatech.edu</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Atlanta, Georgia, USA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              href="https://scholar.google.com/citations?user=YOUR_ID"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a
+              href="https://www.linkedin.com/in/xiaoxu-ma-424b4730b"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>                
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm a graduate student from Georgia Tech, driven by the goal of advancing AI systems
+            that can make meaningful real-world impact.
+          </p>
+
+          <p>
+            My research interests focus on representation learning and robustness, spanning world models
+            for embodied agents, persona-level representation and control in large language models, and
+            efficient representation learning via hashing.
+          </p>
+        </section>
+
+        <!-- What I'm Working On -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Working On</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/persona.png" alt="LLM persona icon" width="100" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">LLM Persona Modeling</h4>
+                <p class="service-item-text">
+                  Understanding and controlling persona-level representations in LLMs.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/world.png" alt="World model icon" width="100" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">World Models</h4>
+                <p class="service-item-text">
+                  Learning predictive world models for robust embodied intelligence.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/hashing.png" alt="Hashing icon" width="100" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Semantic Hashing</h4>
+                <p class="service-item-text">
+                  Learning compact semantic representations for efficient retrieval.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/system.png" alt="System icon" width="100" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robust AI Systems</h4>
+                <p class="service-item-text">
+                  Building AI systems that remain reliable under distribution shift.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Personal -->
+        <section class="Personal">
+          <h3 class="h3 testimonials-title">Personal</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/photo.png" alt="Photography" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Photography</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I enjoy capturing everyday moments, landscapes, and small details through photography.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/travel.png" alt="Travel" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Travel</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I have traveled solo across ten countries through independent and budget-conscious journeys.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/living.png" alt="Livelihood" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Livelihood</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working toward financial independence through my own effort, including tutoring,
+                    service work, and teaching assistant roles.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/academic.png" alt="Academics" width="60" data-testimonials-avatar />
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Academic</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>I have pursued my education entirely at technical universities, from SCUT to TUM and now GeorgiaTech.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- testimonials modal -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/travel.png" alt="" width="80" data-modal-img />
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Travel</h4>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done.
+                  She has a lot of experience and is very concerned about the needs of client. Lorem ipsum
+                  dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor
+                  incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Service -->
+        <section class="service">
+          <h3 class="h3 service-title">Service</h3>
+
+          <div class="service-content">
+            <p class="service-text" style="color: white;">
+              Coming from a rural and ethnic minority background myself, I understand the challenges of navigating academia
+              with limited resources. If you are facing similar difficulties or questions about future paths, I welcome you
+              to reach out for a conversation.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="school-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Education</h3>
+  </div>
+
+  <ol class="timeline-list">
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        M.S. in Electrical and Computer Engineering, Georgia Institute of Technology
+      </h4>
+      <span>08/2025 — Present</span>
+      <p class="timeline-text">
+        Department of Electrical and Computer Engineering (ECE).
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Exchange Student, Electrical and Computer Engineering, Technical University of Munich
+      </h4>
+      <span>04/2024 — 10/2024</span>
+      <p class="timeline-text">
+        Participated in ECE exchange program with coursework and research exposure.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        B.Eng. in Robotics Engineering, South China University of Technology
+      </h4>
+      <span>09/2021 — 06/2025</span>
+      <p class="timeline-text">
+        Robotics Engineering program with a focus on intelligent systems and automation.
+      </p>
+    </li>
+
+  </ol>
+</section>
+
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant, Georgia Institute of Technology</h4>
+              <span>09/2025 — Present</span>
+              <p class="timeline-text">
+                Working on persona-level modeling in large language models and world models for embodied intelligence,
+                with an emphasis on representation learning and robustness.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Research Assistant, Shien-Ming Wu School of Intelligence Engineering, SCUT
+              </h4>
+              <span>10/2024 — 08/2025</span>
+              <p class="timeline-text">
+                Conducted research on image retrieval, focusing on representation learning and efficient similarity search methods.
+              </p>
+            </li>
+	
+	<li class="timeline-item">
+  <h4 class="h4 timeline-item-title">
+    Head Teaching Assistant, Introduction to Circuits, Future Technology Institute, SCUT
+  </h4>
+  <span>09/2024 — 02/2025</span>
+  <p class="timeline-text">
+    Served as Head TA for Introduction to Circuits at the Future Technology Institute, coordinating TA team operations,
+    supporting labs and assignments, managing grading, and assisting course instruction for undergraduate students.
+  </p>
+</li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Tour Guide, Munich</h4>
+              <span>05/2024 — 08/2024</span>
+              <p class="timeline-text">
+                Worked as a tour guide in Munich, leading visitors through local culture, history, and everyday life,
+                and facilitating cross-cultural experiences.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student Assistant, University Library</h4>
+              <span>10/2023 — 03/2024</span>
+              <p class="timeline-text">
+                Worked as a student assistant managing library system operations and administrative tasks,
+                ensuring smooth daily workflows and user support.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Robotics Tutor, Education Department, SCUT Robotics Association</h4>
+              <span>11/2021 — 09/2023</span>
+              <p class="timeline-text">
+                Served as a robotics tutor in the Education Department of the SCUT Robotics Association,
+                delivering robotics instruction to junior undergraduate students and middle school students,
+                and supporting hands-on learning in robotics fundamentals.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title" style="color: white;">Skills</h3>
+
+          <div class="content-card">
+            <p class="skills-list-text" style="color: white;">
+              <strong>Programming:</strong> Python · PyTorch · NumPy / SciPy · CUDA · C / C++
+            </p>
+
+            <p class="skills-list-text" style="color: white;">
+              <strong>Tools &amp; Systems:</strong> Linux · Git · Slurm / HPC · Docker · LaTeX
+            </p>
+
+            <p class="skills-list-text" style="color: white;">
+              <strong>Teaching &amp; Communication:</strong> Robotics Tutoring · Academic Writing · Research Presentation · Cross-cultural Communication
+            </p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- custom js -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
